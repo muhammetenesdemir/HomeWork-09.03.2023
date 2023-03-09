@@ -1,0 +1,91 @@
+HOMEWORK 1:Python'da Veri Tiplerini araştırınız, her bir veri tipi için kendi cümlelerinizle açıklamalar yazınız.
+
+-------------------------------------------PYTHON DATA TYPES----------------------------------------------------------
+Veri türleri farklı türlerde verileri depolayabilirler ve farklı işlevler görebilirler.
+  **string(str) : Metinsel ifade. iki tırnak veya tek tırnak içine yazılan ifadeleri kabul eden yazımsal veri tipidir.
+  
+  baslik = "İhtiyaç Kredisi"
+  print(baslik)
+  print(type(baslık))  =>  <class 'str'>
+  
+  **int,float,complex : Sayısal ifade. Sayısal verileri ifade etmede kullanılırlar. Sayılar tırnak işareti içine alınmaz.
+  
+  --İnteger(int)--tam sayı veri tipi--
+  vade = 36
+  print(vade) => 36
+  print(type(vade)) =>  <class 'int'>
+  
+  --Float(float)-- ondalıklı sayı veri tipi--
+  vade1 = 36.5
+  print(vade1) => 36.5
+  print(type(vade1)) =>  <class 'float'>
+  
+  --Complex--karışık sayı veri tipi--
+  x = 1j
+  print(x) => 1j
+  print(type(x))  => <class 'complex'>
+  
+  **list, tuple, range : Sıralama veri türlerini ifade ederler.
+  
+  --Liste(list)--[] ile tanımlanan listeleme veri türü--
+  x = ["apple", "banana", "cherry"]
+  print(x) => ['apple', 'banana', 'cherry']
+  print(type(x)) => <class 'list'>
+  
+  --Tuple(tuple)--() ile tanımlanan listeleme veri türü
+  x = ("apple", "banana", "cherry")
+  print(x) => ('apple', 'banana', 'cherry')
+  print(type(x)) => <class 'tuple'>
+  
+  --Range(range)--
+  x = range(6)
+  print(x) => range(0,6)
+  print(type(x)) => <class 'range'>
+
+  
+  **dict : Haritalama(mapping) veri türlerini ifade eder.
+  
+  x = {"name" : "John", "age" : 36}
+  print(x) => {"name" : "John", "age" : 36
+  print(type(x)) => <class 'dict'>
+  
+  
+  **set, frozenset : set veri tiplerini ifade eder
+  
+  **Bolean(bool) : True veya False değerinde olabilen veri tipidir. Şart bloklarında, döngülerde kullanılır.
+  
+  a = 3
+  b = 5
+  
+  print(a < b) 
+  a < b ise True değilse False döner
+  
+  
+ HOMEWORK 2 :  -*-*-*-*-*Kodlamaio sitesi veri tipleri örnek *-*-*-*-*-
+  
+string : kurs adı, kurs açıklaması, kursun eğitmeni, Ödev1 , Ödev2 
+
+integer :Kurs tamamlanma oranı, toplam yorum sayısı
+
+list : Kursun eğitmenleri, kursun kategorileri
+
+boolean : Bölümün tamamlanıp tamamlanmadığı
+  
+  
+  HOMEWORK 3 : *-*-*-*-Kodlamaio şart blokları örneği -*-*-*-*-*
+  
+  kursakayıtlımısınız = True
+  
+  if ( kursakayıtlımısınız ):
+    print("Kursa kayıtlısınız")
+  else:
+    print("Kursa kayıtlı değilsiniz")
+  
+  
+  
+  -
+  
+  
+  
+
+
