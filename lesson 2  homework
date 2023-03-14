@@ -1,0 +1,55 @@
+#kayıt sistemi ismi
+print("Student Registration System")
+
+
+# öğrenci listesini verir
+studentList=[] 
+
+#öğrenci ekleme
+studentName = input("Name: ")
+studentSurname = input("Surname: ")
+studentList.append(studentName+" "+studentSurname)
+print(studentList)
+
+print("-*-*-*")
+
+#öğrenci silme
+studentNameSurname = input("Enter the student name and surname you want to delete:")
+for student in studentList:
+        if student == studentNameSurname:
+            studentList.remove(student)
+            print(f"{studentNameSurname} Delete from the list")   
+        else :
+            print(f"{studentNameSurname} Not found in the list")
+
+#Listeye birden fazla öğrenci eklemek
+sayi = int(input("Number of student: "))
+i = 0
+while(i < sayi):
+    newStudent = input("Name-Surname: ")
+    i += 1
+    studentList.extend([newStudent])
+print(studentList)
+
+#öğrenci listesini verir
+for student in studentList:
+    print(student)
+
+#numarası öğrenilmek istenen öğrenci 
+studentNumber = input("Name and surname of the student whose number you want to know: ")
+
+for studentNmbr in studentList:
+    if studentNumber == studentNmbr:
+        ogrenciNo = studentList.index(studentNumber) + 1
+        print("Student Number: ", studentNmbr)
+    else:
+        print(f"{studentNumber} Not found in the list")
+
+#silinmek istenen öğrencinin sayısı
+sayi2 = int(input("Number of students you want to delete: "))
+i = 0
+while(i < sayi2):
+    deletedStudent = input("Name-Surname: ")
+    studentList.remove(deletedStudent)
+    i += 1
+print(f"Final List: {studentList}")
