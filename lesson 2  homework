@@ -52,4 +52,4 @@ while(i < sayi2):
     deletedStudent = input("Name-Surname: ")
     studentList.remove(deletedStudent)
     i += 1
-print(f"Final List: {studentList}")
+print(f"Last List: {studentList}")
