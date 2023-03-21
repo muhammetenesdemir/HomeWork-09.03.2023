@@ -1,0 +1,46 @@
+-*-*-*-*-*-*-HTML-*-*-*-*-*-*-*
+HTML, Hypertext Markup Language'ın kısaltmasıdır ve web sayfalarının oluşturulmasında kullanılan standart bir işaret dilidir. 
+HTML, web sayfalarındaki içeriği yapılandırmak için kullanılır ve web tarayıcıları tarafından yorumlanarak sayfaların görüntülenmesini sağlar
+
+*-*-*-*-*--*-HTML LOCATORS-*-*-*-*-*-*-*-*
+
+HTML'de konumlandırıcılar, bir web sayfasındaki belirli öğeleri bulmak için kullanılan yöntemlere atıfta bulunur. 
+İşte bazı yaygın HTML Locators:
+
+1.ID Locator: Kimlik, bir HTML öğesine atanan benzersiz bir tanımlayıcıdır.
+ID Locator, benzersiz kimliğine dayalı olarak bir öğeyi bulmak için kullanılır.
+Örneğin, bir öğenin kimliği "my-element" ise, onu şu HTML kodunu kullanarak bulabilirsiniz: `<div id="my-element">...</div>`.
+
+2.Class Locator: Sınıf, bir veya daha fazla HTML öğesine atanan bir addır. Sınıf bulucu, sınıf adlarına göre öğeleri bulmak için kullanılır.
+Örneğin, bir öğenin "my class" sınıfı varsa, onu aşağıdaki HTML kodunu kullanarak bulabilirsiniz: <div class="my-class">...</div>.
+
+3.Tag Name Locator: The tag name locator, öğeleri HTML etiket adlarına göre bulmak için kullanılır. 
+Örneğin, bir web sayfasındaki tüm <p> etiketlerini bulmak istiyorsanız, şu HTML kodunu kullanabilirsiniz: <p>...</p>.
+
+4.Attribute locator: Nitelik(attribute), bir HTML öğesinin, öğe hakkında ek bilgi sağlayan bir özelliğidir.
+Attribute locator, öznitelik değerlerine göre öğeleri bulmak için kullanılır.
+Örneğin, "google" kelimesini içeren bir href özelliğine sahip tüm <a> etiketlerini bulmak istiyorsanız,
+aşağıdaki HTML kodunu kullanabilirsiniz: <a href="https://www.google.com"> ...</a>.
+
+5.XPath bulucu: XPath, HTML de dahil olmak üzere XML belgelerinde gezinmek için kullanılan bir dildir.
+XPath bulucu, öğeleri HTML belgesindeki konumlarına veya öznitelik değerlerine göre bulmak için kullanılır.
+Örneğin, bir web sayfasında ikinci <p> ​​etiketini bulmak istiyorsanız, şu XPath ifadesini kullanabilirsiniz: //p[2].
+
+
+*-*-*-*-*-*-*-*SELENİUM AKSİYONLARI-*-*-*-*-*-
+click	                      :Bir öğeyi tıklar.
+click_and_hold	            :Bir öğe üzerinde farenin sol düğmesini basılı tutar.
+context_click	              :Bir öğe üzerinde bağlam tıklaması (sağ tıklama) gerçekleştirir.
+double_click	              :Bir öğeyi çift tıklar.
+drag_and_drop	              :Kaynak öğe üzerinde farenin sol düğmesini basılı tutar, ardından hedef öğeye gider ve fare düğmesini bırakır.
+drag_and_drop_by_offset	    :Kaynak eleman üzerinde sol fare düğmesini basılı tutar, ardından hedef ofsete hareket eder ve fare düğmesini bırakır.
+key_down	                  :Serbest bırakmadan yalnızca bir tuşa basma gönderir.
+key_up	                    :Bir değiştirici tuşu serbest bırakır.
+move_by_offset	            :Fareyi, geçerli fare konumundan bir uzaklığa taşıma.
+move_to_element	            :Fareyi bir öğenin ortasına hareket ettirmek.
+move_to_element_with_offset	:Fareyi belirtilen öğenin bir ötelemesi kadar hareket ettirin, Ötelemeler, öğenin sol üst köşesine göredir.
+perform	                    :Depolanan tüm eylemleri gerçekleştirir.
+pause	                      :Tüm girişleri saniye cinsinden belirtilen süre boyunca duraklat
+release	                    :Bir öğe üzerinde tutulan bir fare düğmesini serbest bırakma.
+reset_actions	              :Halihazırda yerel olarak ve uzak uçta depolanan eylemleri temizler
+send_keys	                  :Anahtarları geçerli odaklanılan öğeye gönderir.
