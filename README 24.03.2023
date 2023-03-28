@@ -1,0 +1,23 @@
+-*-*-*-PYTEST VE PYTEST DEKARATÖRLERİ*-*-*-*-
+
+PyTest, Python için bir test çerçevesidir ve testleri yazmak ve yürütmek için bir dizi araç sağlar. 
+PyTest ayrıca, test işlevlerini ve sınıflarını özelleştirmek için kullanılabilecek bir dizi decorator (dekore edici) sağlar. 
+Bu decorator'lar, test davranışını değiştirmek veya test verilerini özelleştirmek için kullanılabilir.
+
+PyTest'in bazı yaygın decorator'ları şunlardır:
+
+@pytest.fixture: Bu decorator, test fonksiyonlarına veya sınıflarına, diğer test fonksiyonları tarafından kullanılabilecek paylaşılan test verileri
+veya işlevleri sağlamak için kullanılır.Bu, testlerin daha temiz ve daha düzenli olmasını sağlar ve kod tekrarını azaltır.
+
+@pytest.mark.parametrize: Bu decorator, bir test fonksiyonuna farklı girdi değerlerini sağlamak için kullanılır.
+Bu, tek bir test fonksiyonunu farklı veri setleriyle çalıştırmak için kullanışlıdır.
+
+@pytest.mark.skip: Bu decorator, belirli bir test fonksiyonunun geçici olarak atlanmasını sağlar.
+Bu, belirli bir testin hatalı olduğu durumlarda veya bir şeyler üzerinde çalışırken testlerinizi atlamak istediğinizde kullanışlıdır.
+
+@pytest.mark.xfail: Bu decorator, belirli bir test fonksiyonunun beklenen bir hata döndüreceğini işaret etmek için kullanılır.
+Bu, testin geçersiz olduğunu veya beklenen bir hata durumunu ele almak için kullanışlıdır.
+
+@pytest.mark.timeout: Bu decorator, bir testin belirli bir süre içinde tamamlanmasını sağlar. Bu, testlerin uzun süre çalışmasını önlemek için kullanışlıdır.
+
+Bu decorator'lar, testlerinizi özelleştirmenize ve daha iyi bir test deneyimi sağlamanıza yardımcı olur.
